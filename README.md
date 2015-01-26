@@ -10,7 +10,7 @@ Include `animate.min.js` in your page:
 ```html
 <script src=animate.min.js></script>
 ```
-`animate.js` is written in ES6 but the minified version is complied to ES5 for broader support.
+`animate.js` is written in ES6 but the minified version is compiled to ES5 for broader support.
 
 Start animating things:
 ```javascript

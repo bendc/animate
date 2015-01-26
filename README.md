@@ -1,7 +1,8 @@
 # Animate
 
 `animate.js` is a tiny library that helps you write smooth CSS-powered animations in JavaScript. See
-a quick demo of 500 elements animating at [playground.deaxon.com/animate](http://playground.deaxon.com/animate/).
+a quick demo of 500 elements animating at
+[playground.deaxon.com/js/animate](http://playground.deaxon.com/js/animate/).
 
 # Usage
 

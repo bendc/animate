@@ -156,8 +156,11 @@ const animate = (() => {
 
   const setStyle = (params) => {
     return (el) => {
-      [setTransition, setOpacity, setTransform].forEach((func) => {
-        func(el, params);
+      // wait for the next frame
+      requestAnimationFrame(() => {
+        [setTransition, setOpacity, setTransform].forEach((func) => {
+          func(el, params);
+        });
       });
       el.addEventListener("transitionend", clearTransition(params));
     };

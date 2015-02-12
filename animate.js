@@ -145,7 +145,9 @@ const animate = (() => {
       return value + "px";
     };
     return (el, params) => {
-      el.style[transformProperty()] = getTransformFunctions(params).map((func) => {
+      const transforms = getTransformFunctions(params);
+      if (!transforms.length) return;
+      el.style[transformProperty()] = transforms.map((func) => {
         return func + "(" + addUnit(func, params[func]) + ")";
       }).join(" ");
     };

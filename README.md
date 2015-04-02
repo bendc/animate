@@ -54,6 +54,7 @@ DOM element that has finished animating.
 * translateX
 * translateY
 * translateZ
+* scale
 * scaleX
 * scaleY
 * scaleZ
